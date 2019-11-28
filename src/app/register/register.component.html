@@ -1,0 +1,24 @@
+
+<form (ngSubmit)="Insert()">
+    <legend>Add Student</legend>
+
+    <div class="form-group">
+        <label for="no">Roll No.</label>
+        <input type="text" class="form-control" id="no" name="no" placeholder="Roll No." [(ngModel)]="stu.no">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Nmae" [(ngModel)]="stu.name">
+    </div>
+
+    <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" id="address" name="address" placeholder="Address" [(ngModel)]="stu.address">
+    </div>
+
+    
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
